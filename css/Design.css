@@ -1,0 +1,188 @@
+<style>		
+* {
+	box_sizing:border-box;
+}
+body{
+	width:100%; 
+	margin:0;
+	background-color: rgba(25,1133,255,0.2);
+}
+
+/*This is header*/
+.header1{
+	font-family: Verdana;
+	color:rgb(155,222,70);
+	background: url("http://www.stevenagetowncentre.com/media/1167/stc-shops-header.jpg?anchor=center&mode=crop&rnd=131421049060000000&quality=85&width=1366&height=440");
+	padding:.2em;
+}
+
+.headerwelcome {
+	text-align:center;
+}
+
+/*This is navigation bar*/
+.navbar {
+	background:rgba(188,188,188,1);
+	overflow:hidden;
+	display:flex;
+	position:sticky; /*sticks and becomes relative with top:0*/
+	top:0;
+	z-index:2
+}
+
+.navbar>a{
+	font-size: 1.2em;
+	padding:.5em 2em;
+	color:black;
+	text-decoration:none;
+	margin:auto;							
+}
+
+.navbar a:hover{
+	background-color:white;
+}
+
+/*3 CONTAINER*/
+.containergender {
+    display:flex;
+    text-align:center;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.containerclothes {
+    display:flex;
+    text-align:center;
+	justify-content:space-around;
+}
+
+.leftcontainer {
+	flex:33.3%
+}
+.maincontainer {
+	flex:33.3%
+}
+.rightcontainer {
+	flex:33.3%
+}
+
+/*4 CONTAINER */
+.container1 {
+	flex:25%
+}
+.container2 {
+	flex:25%
+}
+.container3 {
+	flex:25%
+}
+.container4 {
+	flex:25%
+}
+
+/*DIFFERECT FIGURE BUILDS*/
+.linkgender {
+	opacity: .7;
+	text-decoration:none;
+	font-size:1.5em;
+	color:rgb(11,11,11);
+}
+.genderimages {
+	height:10em;
+}
+.linkclothes {
+	opacity:.7;
+	text-decoration:none;
+	font-size:1.3em;
+	color:rgb(11,11,11)
+}
+.clothesimages {
+	height:6em;
+}
+
+/*HOVER EFFECT*/
+.linkgender:hover, .linkclothes:hover, .socialmedia>a:hover {
+	opacity:1}
+
+/*SECTION HEADERS*/
+.sectionheaders{
+	color:black;
+	padding:1em 5%;
+	font-size:2em;
+}
+
+/*SOCIAL MEDIA*/
+.socialmedia {
+	position:fixed;
+    top:45%;
+	margin-left:1%
+}
+.socialmedia>a {
+	display:block;
+	width:2em;
+    height:2em;
+    opacity:.7;
+}
+.socialmedia>a>img {
+	width:2em;
+    height:2em;
+    padding:0;
+}
+
+/* DESIGN*/
+.classdesign{
+	margin-left:5%;
+	margin-right:5%;
+	color:rgb(230,155,33)
+}
+
+/*Form */
+.contactform{
+	font-size:2em;
+}
+input{
+	width:15em;
+	display:block;
+	padding:.5em;
+	margin:.2em 0;
+}
+
+#form_message {
+	height:13em;
+}
+
+.contactform {
+	margin-left:5%;
+}
+
+/*Phone View*/
+@media only screen and (max-width:700px) {
+.navbar {
+	flex-direction:column;
+	position: static;
+	}
+.containerclothes {
+	flex-direction:column;
+	}
+.socialmedia>a {
+	display:block;
+	width:1.5em;
+    height:1.5em;
+    opacity:.7;
+	}
+.socialmedia>a>img {
+	width:1.5em;
+    height:1.5em;
+    padding:0;
+	}
+}
+
+		
+/*Footer*/
+.footer {
+	background:rgba(0,0,0,.8);
+	color:white;
+	text-align:right;
+}
+
+</style>
